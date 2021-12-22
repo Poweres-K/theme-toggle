@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import moment from "moment";
 const Article = ({ title, snippet, date, length }) => {
   return (
@@ -13,4 +13,4 @@ const Article = ({ title, snippet, date, length }) => {
   );
 };
 
-export default Article;
+export default memo(Article);
